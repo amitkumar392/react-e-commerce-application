@@ -80,7 +80,7 @@ class ProductProvider extends Component {
   //for cart component
   increment = (id) => {
     let tempCart = [...this.state.cart];
-    const selectedProduct = tempCart.find((item) => item.id == id);
+    const selectedProduct = tempCart.find((item) => item.id === id);
 
     const index = tempCart.indexOf(selectedProduct);
     const product = tempCart[index];
@@ -101,7 +101,7 @@ class ProductProvider extends Component {
   };
   decrement = (id) => {
     let tempCart = [...this.state.cart];
-    const selectedProduct = tempCart.find((item) => item.id == id);
+    const selectedProduct = tempCart.find((item) => item.id === id);
 
     const index = tempCart.indexOf(selectedProduct);
     const product = tempCart[index];
